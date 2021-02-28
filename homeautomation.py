@@ -85,7 +85,8 @@ def start(update, context):
 def bop(update, context):
     logger.info('Photo Requested from telegram')
     logger.info('Capturing photo')
-    cam.saveSnapshot('image.jpg',timestamp=1)
+    ret, frame = video_capture.read()
+    cv2.imwrite('image.jpg', frame)
     logger.info('Sending photo')
     context.bot.send_photo(chat_id=update.message.chat.id, photo=open('image.jpg', 'rb'))
     logger.info('Photo send to %s', update.message.chat.username)
