@@ -1,4 +1,11 @@
 import cv2
 video_capture = cv2.VideoCapture(0)
+input('Ready press enter to capture image of 1st person')
 ret, frame = video_capture.read()
-cv2.imwrite('person.jpg', frame)
+cv2.imwrite('Person1_IMG.jpg', frame)
+input('Ready press enter to capture image of 2nd person')
+ret, frame = video_capture.read()
+cv2.imwrite('Person2_IMG.jpg', frame)
+input('Ready press enter to capture image of 3rd person')
+ret, frame = video_capture.read()
+cv2.imwrite('Person3_IMG.jpg', frame)
