@@ -26,14 +26,17 @@ pir = MotionSensor(4)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-username = 'piharishkumar@gmail.com'
-password = 'Sivahari9801@rit'
+username = '<mail-id>'
+password = '<password>'
 sender = username
 mail_sender = MailSender(username, password)
 state = 0
 process_this_frame = True
 while True:
-    ret, frame = video_capture.read()
+    while True:
+        ret, frame = video_capture.read()
+        if ret:
+            break
     small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
     rgb_small_frame = small_frame[:, :, ::-1]
     if process_this_frame:
@@ -71,5 +74,5 @@ while True:
     if pir.motion_detected:
         images = [{'id': 'Person', 'path': 'image.jpg'}]
         logger.info('Sending photo via email')
-        mail_sender.send(sender, ['piharishkumar@gmail.com'], 'Person alert!', images=images)
-        logger.info('Photo send to piharishkumar@gmail.com')
+        mail_sender.send(sender, ['<recipient mail-id>'], 'Person alert!', images=images)
+        logger.info('Photo send to <recipient mail-id>')
