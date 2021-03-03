@@ -26,4 +26,4 @@ gh repo clone gharishkumar/home-automation
  - Add `homeautomation_final.py` to startup
 
 
- * italic * and *bold*
+ *italic* and **bold**
