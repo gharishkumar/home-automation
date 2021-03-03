@@ -1,14 +1,16 @@
 # Home Automation
 This project is on PIR detection mail and face atuhendication. to send email
 ## Installation
- - [Install RaspberryPi OS](https://raspberrypi.org)
- - Connect to internet
+ - [Install RaspberryPi OS](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
+ - Make sure internet is connected
  - Install required packages by
-```terminal
+```bash
  sudo sh install.sh
 ```
  - Clone git repository
->gh repo clone gharishkumar/home-automation
+```bash
+gh repo clone gharishkumar/home-automation
+```
 ## Setup
  - Capture clear image of 3 persons
 ![Image](https://raspberrypi.org)
@@ -24,4 +26,4 @@ This project is on PIR detection mail and face atuhendication. to send email
  - Add `homeautomation_final.py` to startup
 
 
- * italic * *bold*
+ * italic * and *bold*
