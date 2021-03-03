@@ -13,13 +13,15 @@ gh repo clone gharishkumar/home-automation
 ```
 ## Setup
  - Capture clear image of 3 persons
-![Image](https://raspberrypi.org)
+
  - Open `homeautomation_final.py`
 
  - Change the `names` accordingly
 
  - Change the `mail adderss`
 
+ - Connect the `circuit` as shown
+![Image](https://github.com/gharishkumar/home-automation/raw/main/homeautomation_bb.png)
  - Run `homeautomation_final.py`
 
 ## Run at startup
