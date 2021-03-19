@@ -25,10 +25,14 @@ cd home-automation-min
 ```bash
  python3 capture_image.py
 ```
+**or**
+ - Add images of 3 persons as `Person1_IMG.jpg` `Person2_IMG.jpg` `Person3_IMG.jpg` to `home-automation-min` folder
  - Open `homeautomation_final.py`
 ```bash
  nano homeautomation_final.py
 ```
+**or**
+ - Open and edit in [Thonny python IDE](https://thonny.org/)
  - Change the `names` accordingly
 
  - Change the `mail adderss`
@@ -40,5 +44,6 @@ cd home-automation-min
  python3 homeautomation_final.py
 ```
 ## Run at startup
- - Add `homeautomation_final.py` to [*startup*](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)
+ - ~~Add `homeautomation_final.py` to [*startup*](https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/)~~
+ - Included with the `install.sh` script
 
