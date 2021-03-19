@@ -36,6 +36,8 @@ cd home-automation-min
  - Change the `names` accordingly
 
  - Change the `mail adderss`
+ Make sure to turn on [Less secure app access](https://myaccount.google.com/u/0/lesssecureapps) in case of [gmail](https://mail.google.com/mail/u/0/)
+ You may need to dissable [2-Step Verification](https://myaccount.google.com/u/0/signinoptions/two-step-verification)
 
  - Connect the `circuit` as shown
 ![Image](https://github.com/gharishkumar/home-automation/raw/main/homeautomation_bb.png)
