@@ -75,5 +75,8 @@ while True:
     if pir.motion_detected:
         images = [{'id': 'Person', 'path': 'image.jpg'}]
         logger.info('Sending photo via email')
-        mail_sender.send(sender, ['<recipient mail-id>'], 'Person alert!', images=images)
-        logger.info('Photo send to <recipient mail-id>')
+        try:
+            mail_sender.send(sender, ['<recipient mail-id>'], 'Person alert!', images=images)
+            logger.info('Photo send to <recipient mail-id>')
+        except Exception:
+            logger.info('Photo send to <recipient mail-id>')
