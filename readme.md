@@ -1,6 +1,21 @@
 # Home Automation
 This project is on PIR detection, capturing and sending a photo via mail and face authentication included. Initially decided to include telegram but it turned out to be not that good. So, ~telegram~. Follow the below instructions to install.
 
+## Quick Installation
+ - [Install RaspberryPi OS](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
+ - Make sure the internet is connected
+```bash
+wget https://cutt.ly/harish-git --output-document=project.py
+sudo python3 project.py
+```
+**or**
+ - Goto `https://cutt.ly/harish-git` and save it as `project.py`
+ - Run `project.py` as `sudo`
+<br>
+
+ - Enter name `home-automation`
+ - Change names, photos and mailid, all done
+
 ## Installation
  - [Install RaspberryPi OS](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)
  - Make sure the internet is connected
